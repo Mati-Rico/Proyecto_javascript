@@ -1,0 +1,16 @@
+.index__acheyl {  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 0.7fr 4fr 0.3fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "navIndex navIndex navIndex"
+    "mainIndex mainIndex mainIndex"
+    "footerIndex footerIndex footerIndex";
+}
+
+.navIndex { grid-area: navIndex; }
+
+.mainIndex { grid-area: mainIndex; }
+
+.footerIndex { grid-area: footerIndex; }
