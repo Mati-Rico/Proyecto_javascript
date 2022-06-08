@@ -1,16 +1,55 @@
-.index__acheyl {  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 0.7fr 4fr 0.3fr;
-  gap: 0px 0px;
-  grid-auto-flow: row;
-  grid-template-areas:
-    "navIndex navIndex navIndex"
-    "mainIndex mainIndex mainIndex"
-    "footerIndex footerIndex footerIndex";
+*{
+  margin: 0%;
+  padding: 0%;
 }
 
-.navIndex { grid-area: navIndex; }
+a{
+  text-decoration: none;
+}
+.index__acheyl {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 0.7fr 4fr 0.3fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "navIndex navIndex navIndex"
+      "mainIndex mainIndex mainIndex"
+      "footerIndex footerIndex footerIndex"; 
+    .navIndex {
+      grid-area: navIndex; 
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      color: blue;
+      font-size: 1rem;
+      font-weight: bolder;
+      background-color: lightblue;
+      background-size: 100%;
+      .logo{
+        height: 40px;
+        width: 40px;
+      }
+      .nav__index{
+        display: inline-block;
+        margin-right: 1rem;
+        color: white;
+        text-decoration: none;
+      }
+    }
+    .mainIndex {
+      grid-area: mainIndex;
+      .tipoDeServicio{
+        margin: 2rem 0rem 2rem;
+      }
+      .saludo{
+        margin-bottom: 2rem;
+      }
+    }
+    .footerIndex {
+      margin-top: 3rem;
+      grid-area: footerIndex;
+      text-align: right;
+    }
+}
 
-.mainIndex { grid-area: mainIndex; }
-
-.footerIndex { grid-area: footerIndex; }

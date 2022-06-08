@@ -1,41 +1,42 @@
-*{
+* {
+  margin: 0%;
+  padding: 0%; }
 
-    text-decoration: none;
-}
+a {
+  text-decoration: none; }
 
-.index__acheyl {  display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 0.7fr 4fr 0.3fr;
-    gap: 0px 0px;
-    grid-auto-flow: row;
-    grid-template-areas:
-        "navIndex navIndex navIndex"
-        "mainIndex mainIndex mainIndex"
-        "footerIndex footerIndex footerIndex";
-    }
-    
-    .navIndex { 
-        grid-area: navIndex;
-        list-style: none;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
-    .nav__index{
-        display: inline-block;
-        margin-right: 1rem;
-        justify-content: right;
-    }
-    .logo{
-        height: 40px;
-        width: 40px;
-    }
-    .mainIndex { 
-        grid-area: mainIndex;
-    }
-    
-    .footerIndex {
-        grid-area: footerIndex;
-        text-align: right;
-    }
-    
+.index__acheyl {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 0.7fr 4fr 0.3fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas: "navIndex navIndex navIndex" "mainIndex mainIndex mainIndex" "footerIndex footerIndex footerIndex"; }
+  .index__acheyl .navIndex {
+    grid-area: navIndex;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: blue;
+    font-size: 1rem;
+    font-weight: bolder;
+    background-color: lightblue;
+    background-size: 100%; }
+    .index__acheyl .navIndex .logo {
+      height: 40px;
+      width: 40px; }
+    .index__acheyl .navIndex .nav__index {
+      display: inline-block;
+      margin-right: 1rem;
+      color: white;
+      text-decoration: none; }
+  .index__acheyl .mainIndex {
+    grid-area: mainIndex; }
+    .index__acheyl .mainIndex .tipoDeServicio {
+      margin: 2rem 0rem 2rem; }
+    .index__acheyl .mainIndex .saludo {
+      margin-bottom: 2rem; }
+  .index__acheyl .footerIndex {
+    margin-top: 3rem;
+    grid-area: footerIndex;
+    text-align: right; }
