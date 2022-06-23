@@ -72,3 +72,10 @@ array.push(detallePedido2);
 const pedido1 = new Pedido (new Date(), array);
 
 console.log(pedido1.calcularTotal());
+
+let boton = document.querySelector('.boton')
+boton.addEventListener('click', solicitar)
+
+function solicitar(){
+    console.log('Gracias por solicitar nuestro servicio, nos contactaremos contigo a la brevedad')
+}
