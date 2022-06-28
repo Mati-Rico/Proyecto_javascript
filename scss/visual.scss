@@ -13,28 +13,36 @@ a{
     gap: 0px 0px;
     grid-auto-flow: row;
     grid-template-areas:
-      "navIndex navIndex navIndex"
+      "nombre navIndex navIndex"
       "mainIndex mainIndex mainIndex"
-      "footerIndex footerIndex footerIndex"; 
+      "footerIndex footerIndex footerIndex";
+      .nombre{
+        grid-area: nombre; 
+        display: flex;
+        justify-content: left;
+        align-items: center;
+        font-size: 1.7rem;
+        background-color: rgba($color: #EDEDEC, $alpha: 0.7);
+        background-size: 100%;
+        font-family: 'Gochi Hand', cursive;
+      } 
     .navIndex {
       grid-area: navIndex; 
       display: flex;
-      justify-content: space-between;
+      justify-content: right;
       align-items: center;
-      color: blue;
+      color:gray;
       font-size: 1rem;
       font-weight: bolder;
-      background-color: lightblue;
+      background-color: rgba($color: #EDEDEC, $alpha: 0.7);
       background-size: 100%;
-      .logo{
-        height: 40px;
-        width: 40px;
-      }
+      font-family: 'Gochi Hand', cursive;
       .nav__index{
         display: inline-block;
         margin-right: 1rem;
-        color: white;
+        color:gray;
         text-decoration: none;
+        font-size: 1.2rem;
       }
     }
     .mainIndex {

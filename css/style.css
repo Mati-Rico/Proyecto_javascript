@@ -11,25 +11,33 @@ a {
   grid-template-rows: 0.7fr 4fr 0.3fr;
   gap: 0px 0px;
   grid-auto-flow: row;
-  grid-template-areas: "navIndex navIndex navIndex" "mainIndex mainIndex mainIndex" "footerIndex footerIndex footerIndex"; }
+  grid-template-areas: "nombre navIndex navIndex" "mainIndex mainIndex mainIndex" "footerIndex footerIndex footerIndex"; }
+  .index__acheyl .nombre {
+    grid-area: nombre;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    font-size: 1.7rem;
+    background-color: rgba(237, 237, 236, 0.7);
+    background-size: 100%;
+    font-family: 'Gochi Hand', cursive; }
   .index__acheyl .navIndex {
     grid-area: navIndex;
     display: flex;
-    justify-content: space-between;
+    justify-content: right;
     align-items: center;
-    color: blue;
+    color: gray;
     font-size: 1rem;
     font-weight: bolder;
-    background-color: lightblue;
-    background-size: 100%; }
-    .index__acheyl .navIndex .logo {
-      height: 40px;
-      width: 40px; }
+    background-color: rgba(237, 237, 236, 0.7);
+    background-size: 100%;
+    font-family: 'Gochi Hand', cursive; }
     .index__acheyl .navIndex .nav__index {
       display: inline-block;
       margin-right: 1rem;
-      color: white;
-      text-decoration: none; }
+      color: gray;
+      text-decoration: none;
+      font-size: 1.2rem; }
   .index__acheyl .mainIndex {
     grid-area: mainIndex; }
     .index__acheyl .mainIndex .tipoDeServicio {
