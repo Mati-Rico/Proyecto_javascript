@@ -94,8 +94,6 @@ function solicitar(){
 // const dt = DateTime.now();
 
 // console.log( dt.toLocaleString(DateTime.DATETIME_SHORT) )
-import Swal from 'sweetalert2/dist/sweetalert2.js'
-import 'sweetalert2/src/sweetalert2.scss'
 
 const showAlert = () => {
     Swal.fire({
