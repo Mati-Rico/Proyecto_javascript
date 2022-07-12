@@ -80,17 +80,32 @@ function solicitar(){
     console.log('Gracias por solicitar nuestro servicio, nos contactaremos contigo a la brevedad')
 }
 
-const submitForm = (ID) => {
-    let form =document.getElementById(ID);
-    form.addEventListener('submit', (e) =>{
-        e.preventDefault(); 
-        console.log(e.target);
-        console.log('submitForm')
-        console.log(form.children)
-    })
+// const submitForm = (ID) => {
+//     let form =document.getElementById(ID);
+//     form.addEventListener('submit', (e) =>{
+//         e.preventDefault(); 
+//         console.log(e.target);
+//         console.log('submitForm')
+//         console.log(form.children)
+//     })
+// }
+// submitForm('formulario')
+
+// const dt = DateTime.now();
+
+// console.log( dt.toLocaleString(DateTime.DATETIME_SHORT) )
+import Swal from 'sweetalert2/dist/sweetalert2.js'
+import 'sweetalert2/src/sweetalert2.scss'
+
+const showAlert = () => {
+    Swal.fire({
+        title:'Eviado',
+        text:'La consulta fue enviada correctamente',
+        icon:'submit',
+        confirmButtonText:'Cool'
+    }
+    )
 }
-submitForm('formulario')
 
-const dt = DateTime.now();
-
-console.log( dt.toLocaleString(DateTime.DATETIME_SHORT) )
+let button = document.getElementById('alert');
+button.onclick = showAlert
