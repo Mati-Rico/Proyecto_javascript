@@ -74,6 +74,7 @@ const pedido1 = new Pedido (new Date(), array);
 console.log(pedido1.calcularTotal());
 
 let boton = document.querySelector('.boton')
+console.log('boton')
 boton.addEventListener('click', solicitar)
 
 function solicitar(){
@@ -95,15 +96,3 @@ function solicitar(){
 
 // console.log( dt.toLocaleString(DateTime.DATETIME_SHORT) )
 
-const showAlert = () => {
-    Swal.fire({
-        title:'Eviado',
-        text:'La consulta fue enviada correctamente',
-        icon:'submit',
-        confirmButtonText:'Cool'
-    }
-    )
-}
-
-let button = document.getElementById('alert');
-button.onclick = showAlert
