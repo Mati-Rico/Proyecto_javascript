@@ -1,3 +1,6 @@
+html {
+  font-size: 62.5%; }
+
 * {
   margin: 0%;
   padding: 0%; }
@@ -8,17 +11,19 @@ a {
 .index__acheyl {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 0.7fr 4fr 0.3fr;
+  grid-template-rows: 0.15fr 2fr 0.1fr;
   gap: 0px 0px;
   grid-auto-flow: row;
   grid-template-areas: "nombre navIndex navIndex" "mainIndex mainIndex mainIndex" "footerIndex footerIndex footerIndex"; }
   .index__acheyl .nombre {
     grid-area: nombre;
     display: flex;
-    justify-content: left;
+    padding-left: 0.4rem;
     align-items: center;
-    font-size: 1.7rem;
-    background-color: rgba(237, 237, 236, 0.7);
+    text-align: center;
+    font-size: 2.5rem;
+    background-color: #2510a3;
+    color: white;
     background-size: 100%;
     font-family: 'Gochi Hand', cursive; }
   .index__acheyl .navIndex {
@@ -26,24 +31,32 @@ a {
     display: flex;
     justify-content: right;
     align-items: center;
-    color: gray;
-    font-size: 1rem;
+    color: white;
+    font-size: 2.5rem;
     font-weight: bolder;
-    background-color: rgba(237, 237, 236, 0.7);
+    background-color: #2310a3;
     background-size: 100%;
     font-family: 'Gochi Hand', cursive; }
     .index__acheyl .navIndex .nav__index {
       display: inline-block;
       margin-right: 1rem;
-      color: gray;
+      color: white;
       text-decoration: none;
-      font-size: 1.2rem; }
+      font-size: 1.5rem; }
   .index__acheyl .mainIndex {
     grid-area: mainIndex; }
     .index__acheyl .mainIndex .tipoDeServicio {
-      margin: 2rem 0rem 2rem; }
+      margin: 2rem 0rem 2rem;
+      text-align: center;
+      color: blue; }
     .index__acheyl .mainIndex .saludo {
       margin-bottom: 2rem; }
+    .index__acheyl .mainIndex .img__presentacion {
+      text-align: center; }
+    .index__acheyl .mainIndex .fondo {
+      margin-top: 3px;
+      width: 100%;
+      height: 600px; }
   .index__acheyl .footerIndex {
     margin-top: 3rem;
     grid-area: footerIndex;
