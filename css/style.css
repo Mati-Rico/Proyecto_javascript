@@ -61,3 +61,65 @@ a {
     margin-top: 3rem;
     grid-area: footerIndex;
     text-align: right; }
+
+.servicios {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 6.5fr 0.5fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas: "nameNav serviciosNav serviciosNav" "serviciosMain serviciosMain serviciosMain" "serviciosFooter serviciosFooter serviciosFooter"; }
+  .servicios .nameNav {
+    grid-area: nameNav;
+    text-align: left;
+    color: white;
+    background-color: #2510a3;
+    font-family: 'Gochi Hand', cursive;
+    align-items: center; }
+    .servicios .nameNav .nameServ {
+      font-size: 2.5rem; }
+  .servicios .serviciosNav {
+    grid-area: serviciosNav;
+    display: inline-block;
+    background-color: #2310a3;
+    color: white;
+    font-family: 'Gochi Hand', cursive;
+    text-align: right; }
+    .servicios .serviciosNav .nav__serv {
+      display: inline-block;
+      margin-right: 1rem;
+      color: white;
+      text-decoration: none;
+      font-size: 1.7rem; }
+
+.serviciosMain {
+  grid-area: serviciosMain;
+  margin-top: 1rem; }
+  .serviciosMain .electrico {
+    display: flex; }
+    .serviciosMain .electrico .d__electrico {
+      font-size: 1.5rem; }
+    .serviciosMain .electrico .imgElectrico {
+      height: 300px;
+      width: 400px;
+      border-radius: 3px;
+      border: 0.5px;
+      border-color: gray;
+      border-style: solid; }
+  .serviciosMain .digital {
+    display: flex; }
+    .serviciosMain .digital .d__digital {
+      font-size: 1.5rem;
+      text-align: left; }
+    .serviciosMain .digital .imgDigital {
+      height: 300px;
+      width: 300px;
+      border-radius: 3px;
+      border: 0.5px;
+      border-color: gray;
+      border-style: solid; }
+
+.serviciosFooter {
+  grid-area: serviciosFooter;
+  text-align: right;
+  color: blue; }
