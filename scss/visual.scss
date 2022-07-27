@@ -80,7 +80,7 @@ a{
 .servicios {  
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 6.5fr 0.5fr;
+  grid-template-rows: 0.15fr 2fr 0.1fr;
   gap: 0px 0px;
   grid-auto-flow: row;
   grid-template-areas:
@@ -154,6 +154,55 @@ a{
   text-align: right;
   color: blue;
 }
+.nosotros {  
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 6.5fr 0.5fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "nameNosotros nosotrosNav nosotrosNav"
+    "nosotrosMain nosotrosMain nosotrosMain"
+    "footerNosotros footerNosotros footerNosotros";
+  .nameNosotros { 
+    grid-area: nameNosotros;
+    text-align: left;
+    color: white;
+    background-color: #2510a3;
+    font-family: 'Gochi Hand', cursive;
+    align-items: center;
+    .nameNos{
+      font-size: 2.5rem;
+    }
+  }
+  .nosotrosNav { 
+    grid-area: nosotrosNav;
+    display: inline-block;
+    background-color: #2310a3;
+    color: white;
+    font-family: 'Gochi Hand', cursive;
+    text-align: right;
+    .nav__nosotros{
+      display: inline-block;
+      margin-right: 1rem;
+      color: white;
+      text-decoration: none;
+      font-size: 1.7rem;
+    }
+  }
+}
+
+.nosotrosMain { 
+  grid-area: nosotrosMain;
+  .quienesSomos{
+    font-size: 1.5rem;
+  }
+}
+
+.footerNosotros { 
+  grid-area: footerNosotros;
+}
+
 
 
 
