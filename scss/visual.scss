@@ -161,7 +161,7 @@ a{
       margin-top: 1rem;
     }
     .imgDigital{
-      margin-top: 1rem
+      margin-top: 1rem;
       height: 300px;
       width: 300px;
       border-radius: 3px;
@@ -184,7 +184,7 @@ a{
     }
   } 
 
-}
+
 .serviciosFooter { 
   grid-area: serviciosFooter;
   text-align: right;
@@ -238,10 +238,79 @@ a{
 .footerNosotros { 
   grid-area: footerNosotros;
 }
+}
+.contacto {  
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 6.5fr 0.5fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "nameContacto contactoNav contactoNav"
+    "contactoMain contactoMain contactoMain"
+    "footerContacto footerContacto footerContacto";
+    .nameContacto { 
+      grid-area: nameContacto;
+      display: flex;
+      text-align: left;
+      color: white;
+      background-color: #2510a3;
+      font-family: 'Gochi Hand', cursive;
+      align-items: center;
+      background-size: 100%;
+      font-size: 2.5rem;
+    }
+    .contactoNav { 
+      grid-area: contactoNav; 
+      display: flex;
+      align-items: center;
+      justify-content: right;
+      background-color: #2310a3;
+      color: white;
+      font-family: 'Gochi Hand', cursive;
+      .nav__contacto{
+        display: inline-block;
+        margin-right: 1rem;
+        color: white;
+        text-decoration: none;
+        font-size: 1.7rem;
+      }
+    }
+}
 
+.contactoMain { 
+  grid-area: contactoMain;
+  .tituloContacto{
+    margin-top: 1%;
+    text-align: center;
+    font-family: 'Acme', sans-serif;
+    font-size: 3rem;
+  }
+  .comentarioContacto{
+    margin-top: 0.4%;
+    margin-bottom: 0.4%;
+    text-align: center;
+    font-family: 'Acme', sans-serif;
+    font-size: 1.5rem;
+  }
+  .form__contacto{
+    text-align: center;
+    font-family: 'Acme', sans-serif;
+    font-size: 1.2rem;
+    .Contacto_Botones{
+      margin-bottom: 1.5%;
+    }
+    .Contacto_BotonesG{
+      margin-bottom: 1.5%;
+    }
+    .BotonLimpiarFormulario{
+      margin-bottom: 5%;
+    }
+  }
+}
 
-
-
-
-
-
+.footerContacto { 
+  grid-area: footerContacto;
+  text-align: right;
+  color: blue;
+}

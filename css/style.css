@@ -131,6 +131,7 @@ a {
       text-align: left;
       margin-top: 1rem; }
     .serviciosMain .digital .imgDigital {
+      margin-top: 1rem;
       height: 300px;
       width: 300px;
       border-radius: 3px;
@@ -147,46 +148,103 @@ a {
       justify-content: center;
       align-items: center;
       margin-top: 8px; }
+  .serviciosMain .serviciosFooter {
+    grid-area: serviciosFooter;
+    text-align: right;
+    color: blue; }
+  .serviciosMain .nosotros {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 6.5fr 0.5fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas: "nameNosotros nosotrosNav nosotrosNav" "nosotrosMain nosotrosMain nosotrosMain" "footerNosotros footerNosotros footerNosotros"; }
+    .serviciosMain .nosotros .nameNosotros {
+      grid-area: nameNosotros;
+      text-align: left;
+      color: white;
+      background-color: #2510a3;
+      font-family: 'Gochi Hand', cursive;
+      align-items: center; }
+      .serviciosMain .nosotros .nameNosotros .nameNos {
+        font-size: 2.5rem; }
+    .serviciosMain .nosotros .nosotrosNav {
+      grid-area: nosotrosNav;
+      display: inline-block;
+      background-color: #2310a3;
+      color: white;
+      font-family: 'Gochi Hand', cursive;
+      text-align: right; }
+      .serviciosMain .nosotros .nosotrosNav .nav__nosotros {
+        display: inline-block;
+        margin-right: 1rem;
+        color: white;
+        text-decoration: none;
+        font-size: 1.7rem; }
+  .serviciosMain .nosotrosMain {
+    grid-area: nosotrosMain; }
+    .serviciosMain .nosotrosMain .quienesSomos {
+      font-size: 1.5rem; }
+  .serviciosMain .footerNosotros {
+    grid-area: footerNosotros; }
 
-.serviciosFooter {
-  grid-area: serviciosFooter;
-  text-align: right;
-  color: blue; }
-
-.nosotros {
+.contacto {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 6.5fr 0.5fr;
   gap: 0px 0px;
   grid-auto-flow: row;
-  grid-template-areas: "nameNosotros nosotrosNav nosotrosNav" "nosotrosMain nosotrosMain nosotrosMain" "footerNosotros footerNosotros footerNosotros"; }
-  .nosotros .nameNosotros {
-    grid-area: nameNosotros;
+  grid-template-areas: "nameContacto contactoNav contactoNav" "contactoMain contactoMain contactoMain" "footerContacto footerContacto footerContacto"; }
+  .contacto .nameContacto {
+    grid-area: nameContacto;
+    display: flex;
     text-align: left;
     color: white;
     background-color: #2510a3;
     font-family: 'Gochi Hand', cursive;
-    align-items: center; }
-    .nosotros .nameNosotros .nameNos {
-      font-size: 2.5rem; }
-  .nosotros .nosotrosNav {
-    grid-area: nosotrosNav;
-    display: inline-block;
+    align-items: center;
+    background-size: 100%;
+    font-size: 2.5rem; }
+  .contacto .contactoNav {
+    grid-area: contactoNav;
+    display: flex;
+    align-items: center;
+    justify-content: right;
     background-color: #2310a3;
     color: white;
-    font-family: 'Gochi Hand', cursive;
-    text-align: right; }
-    .nosotros .nosotrosNav .nav__nosotros {
+    font-family: 'Gochi Hand', cursive; }
+    .contacto .contactoNav .nav__contacto {
       display: inline-block;
       margin-right: 1rem;
       color: white;
       text-decoration: none;
       font-size: 1.7rem; }
 
-.nosotrosMain {
-  grid-area: nosotrosMain; }
-  .nosotrosMain .quienesSomos {
+.contactoMain {
+  grid-area: contactoMain; }
+  .contactoMain .tituloContacto {
+    margin-top: 1%;
+    text-align: center;
+    font-family: 'Acme', sans-serif;
+    font-size: 3rem; }
+  .contactoMain .comentarioContacto {
+    margin-top: 0.4%;
+    margin-bottom: 0.4%;
+    text-align: center;
+    font-family: 'Acme', sans-serif;
     font-size: 1.5rem; }
+  .contactoMain .form__contacto {
+    text-align: center;
+    font-family: 'Acme', sans-serif;
+    font-size: 1.2rem; }
+    .contactoMain .form__contacto .Contacto_Botones {
+      margin-bottom: 1.5%; }
+    .contactoMain .form__contacto .Contacto_BotonesG {
+      margin-bottom: 1.5%; }
+    .contactoMain .form__contacto .BotonLimpiarFormulario {
+      margin-bottom: 5%; }
 
-.footerNosotros {
-  grid-area: footerNosotros; }
+.footerContacto {
+  grid-area: footerContacto;
+  text-align: right;
+  color: blue; }
