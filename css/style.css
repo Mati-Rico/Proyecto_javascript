@@ -70,21 +70,26 @@ a {
   grid-auto-flow: row;
   grid-template-areas: "nameNav serviciosNav serviciosNav" "serviciosMain serviciosMain serviciosMain" "serviciosFooter serviciosFooter serviciosFooter"; }
   .servicios .nameNav {
+    display: flex;
     grid-area: nameNav;
     text-align: left;
     color: white;
     background-color: #2510a3;
     font-family: 'Gochi Hand', cursive;
-    align-items: center; }
+    align-items: center;
+    background-size: 100%; }
     .servicios .nameNav .nameServ {
       font-size: 2.5rem; }
   .servicios .serviciosNav {
     grid-area: serviciosNav;
-    display: inline-block;
+    display: flex;
+    align-items: center;
+    justify-content: right;
     background-color: #2310a3;
     color: white;
     font-family: 'Gochi Hand', cursive;
-    text-align: right; }
+    text-align: right;
+    background-size: 100%; }
     .servicios .serviciosNav .nav__serv {
       display: inline-block;
       margin-right: 1rem;
@@ -94,9 +99,10 @@ a {
 
 .serviciosMain {
   grid-area: serviciosMain;
-  margin-top: 1rem; }
+  margin-top: 0.5rem; }
   .serviciosMain .electrico {
-    display: flex; }
+    display: flex;
+    font-family: 'Acme', sans-serif; }
     .serviciosMain .electrico .d__electrico {
       font-size: 1.5rem; }
     .serviciosMain .electrico .imgElectrico {
@@ -106,11 +112,24 @@ a {
       border: 0.5px;
       border-color: gray;
       border-style: solid; }
+    .serviciosMain .electrico .tituloElectrico {
+      list-style: none;
+      margin-top: 1%; }
+    .serviciosMain .electrico .buttonElectrico {
+      display: flex;
+      text-align: center;
+      justify-content: center;
+      align-items: center;
+      margin-top: 3%; }
+    .serviciosMain .electrico .tit2Electrico {
+      margin-bottom: 2%; }
   .serviciosMain .digital {
-    display: flex; }
+    display: flex;
+    font-family: 'Acme', sans-serif; }
     .serviciosMain .digital .d__digital {
-      font-size: 1.5rem;
-      text-align: left; }
+      font-size: 1.8rem;
+      text-align: left;
+      margin-top: 1rem; }
     .serviciosMain .digital .imgDigital {
       height: 300px;
       width: 300px;
@@ -118,6 +137,16 @@ a {
       border: 0.5px;
       border-color: gray;
       border-style: solid; }
+    .serviciosMain .digital .tituloDigital {
+      list-style: none; }
+    .serviciosMain .digital .tit2Digital {
+      margin-bottom: 10px; }
+    .serviciosMain .digital .buttonDigital {
+      display: flex;
+      text-align: center;
+      justify-content: center;
+      align-items: center;
+      margin-top: 8px; }
 
 .serviciosFooter {
   grid-area: serviciosFooter;
