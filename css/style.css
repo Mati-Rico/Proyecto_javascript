@@ -148,50 +148,73 @@ a {
       justify-content: center;
       align-items: center;
       margin-top: 8px; }
-  .serviciosMain .serviciosFooter {
-    grid-area: serviciosFooter;
+
+.serviciosFooter {
+  grid-area: serviciosFooter;
+  text-align: right;
+  color: blue; }
+
+.nosotros {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 0.49fr 2fr 0.01fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas: "nameNosotros nosotrosNav nosotrosNav" "nosotrosMain nosotrosMain nosotrosMain" "footerNosotros footerNosotros footerNosotros"; }
+  .nosotros .nameNosotros {
+    grid-area: nameNosotros;
+    display: flex;
+    text-align: left;
+    color: white;
+    background-color: #2510a3;
+    font-family: 'Gochi Hand', cursive;
+    align-items: center; }
+    .nosotros .nameNosotros .nameNos {
+      font-size: 2.5rem; }
+  .nosotros .nosotrosNav {
+    grid-area: nosotrosNav;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    background-color: #2310a3;
+    color: white;
+    font-family: 'Gochi Hand', cursive;
     text-align: right;
-    color: blue; }
-  .serviciosMain .nosotros {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 6.5fr 0.5fr;
-    gap: 0px 0px;
-    grid-auto-flow: row;
-    grid-template-areas: "nameNosotros nosotrosNav nosotrosNav" "nosotrosMain nosotrosMain nosotrosMain" "footerNosotros footerNosotros footerNosotros"; }
-    .serviciosMain .nosotros .nameNosotros {
-      grid-area: nameNosotros;
-      text-align: left;
-      color: white;
-      background-color: #2510a3;
-      font-family: 'Gochi Hand', cursive;
-      align-items: center; }
-      .serviciosMain .nosotros .nameNosotros .nameNos {
-        font-size: 2.5rem; }
-    .serviciosMain .nosotros .nosotrosNav {
-      grid-area: nosotrosNav;
+    background-size: 100%; }
+    .nosotros .nosotrosNav .nav__nosotros {
       display: inline-block;
-      background-color: #2310a3;
+      margin-right: 1rem;
       color: white;
-      font-family: 'Gochi Hand', cursive;
-      text-align: right; }
-      .serviciosMain .nosotros .nosotrosNav .nav__nosotros {
-        display: inline-block;
-        margin-right: 1rem;
-        color: white;
-        text-decoration: none;
-        font-size: 1.7rem; }
-  .serviciosMain .nosotrosMain {
-    grid-area: nosotrosMain; }
-    .serviciosMain .nosotrosMain .quienesSomos {
-      font-size: 1.5rem; }
-  .serviciosMain .footerNosotros {
-    grid-area: footerNosotros; }
+      text-decoration: none;
+      font-size: 1.7rem; }
+
+.nosotrosMain {
+  grid-area: nosotrosMain;
+  margin: 2rem 0.3rem 0 0.3rem; }
+  .nosotrosMain .titulo__Quienes {
+    font-family: 'Acme', sans-serif;
+    font-size: 3rem;
+    text-align: center;
+    margin-bottom: 1rem; }
+  .nosotrosMain .quienesSomos1, .nosotrosMain .quienesSomos2, .nosotrosMain .quienesSomos3, .nosotrosMain .quienesSomos4 {
+    font-size: 1.5rem;
+    text-align: center;
+    margin-bottom: 5rem;
+    border-radius: 0.5rem;
+    border: #6abaf0 dotted;
+    font-family: 'Acme', sans-serif;
+    font-size: 1.7rem; }
+
+.footerNosotros {
+  grid-area: footerNosotros;
+  text-align: right;
+  color: blue;
+  margin-top: 2rem; }
 
 .contacto {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 6.5fr 0.5fr;
+  grid-template-rows: 0.45fr 2fr 0.1fr;
   gap: 0px 0px;
   grid-auto-flow: row;
   grid-template-areas: "nameContacto contactoNav contactoNav" "contactoMain contactoMain contactoMain" "footerContacto footerContacto footerContacto"; }
@@ -212,7 +235,8 @@ a {
     justify-content: right;
     background-color: #2310a3;
     color: white;
-    font-family: 'Gochi Hand', cursive; }
+    font-family: 'Gochi Hand', cursive;
+    background-size: 100%; }
     .contacto .contactoNav .nav__contacto {
       display: inline-block;
       margin-right: 1rem;
@@ -221,7 +245,8 @@ a {
       font-size: 1.7rem; }
 
 .contactoMain {
-  grid-area: contactoMain; }
+  grid-area: contactoMain;
+  margin-top: 0.5rem; }
   .contactoMain .tituloContacto {
     margin-top: 1%;
     text-align: center;
@@ -234,17 +259,28 @@ a {
     font-family: 'Acme', sans-serif;
     font-size: 1.5rem; }
   .contactoMain .form__contacto {
+    padding-top: 1%;
     text-align: center;
     font-family: 'Acme', sans-serif;
-    font-size: 1.2rem; }
+    font-size: 1.2rem;
+    margin: 0% 10% 0% 10%; }
     .contactoMain .form__contacto .Contacto_Botones {
       margin-bottom: 1.5%; }
     .contactoMain .form__contacto .Contacto_BotonesG {
       margin-bottom: 1.5%; }
     .contactoMain .form__contacto .BotonLimpiarFormulario {
       margin-bottom: 5%; }
+    .contactoMain .form__contacto .ingresoNombre {
+      padding-top: 1%; }
+    .contactoMain .form__contacto .comentarioFinal {
+      display: flex;
+      text-align: center;
+      justify-content: center;
+      align-items: center;
+      padding-right: 7%; }
 
 .footerContacto {
   grid-area: footerContacto;
   text-align: right;
-  color: blue; }
+  color: blue;
+  margin-top: 2rem; }

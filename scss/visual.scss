@@ -183,17 +183,17 @@ a{
       margin-top: 8px;
     }
   } 
-
-
+}
 .serviciosFooter { 
   grid-area: serviciosFooter;
   text-align: right;
   color: blue;
 }
+
 .nosotros {  
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 6.5fr 0.5fr;
+  grid-template-rows: 0.49fr 2fr 0.01fr;
   gap: 0px 0px;
   grid-auto-flow: row;
   grid-template-areas:
@@ -202,6 +202,7 @@ a{
     "footerNosotros footerNosotros footerNosotros";
   .nameNosotros { 
     grid-area: nameNosotros;
+    display: flex;
     text-align: left;
     color: white;
     background-color: #2510a3;
@@ -213,11 +214,14 @@ a{
   }
   .nosotrosNav { 
     grid-area: nosotrosNav;
-    display: inline-block;
+    display: flex;
+    align-items: center;
+    justify-content: right;
     background-color: #2310a3;
     color: white;
     font-family: 'Gochi Hand', cursive;
     text-align: right;
+    background-size: 100%;
     .nav__nosotros{
       display: inline-block;
       margin-right: 1rem;
@@ -227,22 +231,47 @@ a{
     }
   }
 }
-
-.nosotrosMain { 
-  grid-area: nosotrosMain;
-  .quienesSomos{
-    font-size: 1.5rem;
-  }
-}
+  .nosotrosMain { 
+    grid-area: nosotrosMain;
+    margin: 2rem 0.3rem 0 0.3rem;
+    .titulo__Quienes{
+      font-family: 'Acme', sans-serif;
+      font-size: 3rem;
+      text-align: center;
+      margin-bottom: 1rem;
+    }
+    .quienesSomos1{
+      font-size: 1.5rem;
+      text-align: center;
+      margin-bottom: 5rem;
+      border-radius: 0.5rem;
+      border: rgb(106, 186, 240) dotted ;
+      font-family: 'Acme', sans-serif;
+      font-size: 1.7rem;
+    }
+      .quienesSomos2{
+        @extend .quienesSomos1;
+      }
+      .quienesSomos3{
+        @extend .quienesSomos1;
+      }
+      .quienesSomos4{
+        @extend .quienesSomos1;
+      }
+    }
+  
 
 .footerNosotros { 
   grid-area: footerNosotros;
+  text-align: right;
+  color: blue;
+  margin-top: 2rem;
 }
-}
+
 .contacto {  
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 6.5fr 0.5fr;
+  grid-template-rows: 0.45fr 2fr 0.1fr;
   gap: 0px 0px;
   grid-auto-flow: row;
   grid-template-areas:
@@ -268,6 +297,7 @@ a{
       background-color: #2310a3;
       color: white;
       font-family: 'Gochi Hand', cursive;
+      background-size: 100%;
       .nav__contacto{
         display: inline-block;
         margin-right: 1rem;
@@ -280,6 +310,7 @@ a{
 
 .contactoMain { 
   grid-area: contactoMain;
+  margin-top: 0.5rem;
   .tituloContacto{
     margin-top: 1%;
     text-align: center;
@@ -294,9 +325,11 @@ a{
     font-size: 1.5rem;
   }
   .form__contacto{
+    padding-top: 1%;
     text-align: center;
     font-family: 'Acme', sans-serif;
     font-size: 1.2rem;
+    margin: 0% 10% 0% 10%;
     .Contacto_Botones{
       margin-bottom: 1.5%;
     }
@@ -306,6 +339,16 @@ a{
     .BotonLimpiarFormulario{
       margin-bottom: 5%;
     }
+    .ingresoNombre{
+      padding-top: 1%;
+    }
+    .comentarioFinal{
+      display: flex;
+      text-align: center;
+      justify-content: center;
+      align-items: center;
+      padding-right: 7%;
+    }
   }
 }
 
@@ -313,4 +356,5 @@ a{
   grid-area: footerContacto;
   text-align: right;
   color: blue;
+  margin-top: 2rem;
 }

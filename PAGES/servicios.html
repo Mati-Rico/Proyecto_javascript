@@ -68,9 +68,16 @@
                         En caso de elegir esta opción tenes una prueba gratuita por 48hs del equipo</p>
                     </li>
                 </ul>
-                <div class="buttonElectrico">
-                    <input class="btn btn-primary" type="submit" value="Solicitar servicio">
-                </div>
+                <!-- <div class="buttonElectrico">
+                    <input class="btn btn-primary" type="submit" value="Solicitar servicio" >
+                    <input class="btn btn-primary" type="submit" value="Ver Precio" id="cotElectrico">
+                </div> -->
+                <form action="">
+                    <label for="CantDigital">Cantidad de equipos a solicitar</label><input type="number" name="" id="CantidadDigital">
+                    <input type="button" onclick="multiplicar2()" value="Cotizar" class="btn btn-primary">
+                </form>
+                <p>Monto total del servicio: $</p>
+                <span id="resultado2"></span>
             </div>
             <div class="img__electrico">
                 <img src="../FOTOS/odorizadorelectrico.jpg" alt="Odorizador Electrico" class="imgElectrico">
@@ -101,9 +108,16 @@
                         Este equipo se vende al cliente y luego se realiza el servicio.
                     </li>
                 </ul>
-            <div class="buttonDigital">
+            <!-- <div class="buttonDigital">
             <input class="btn btn-primary" type="submit" value="Solicitar servicio" >
-            </div>
+            <input class="btn btn-primary" type="submit" value="Ver Precio" id="cotDigital">
+            </div> -->
+            <form action="">
+            <label for="CantElectricos">Cantidad de equipos a solicitar</label><input type="numbre" name="" id="CantidadElectricos">
+            <input type="button" onclick="multiplicar()" value="Cotizar" class="btn btn-primary">
+        </form>
+        <p>Monto total del servicio: $</p>
+        <span id="resultado"></span>
         </div>
         </div>  
         
@@ -118,5 +132,6 @@
 </div>
 
 <script src="../javascript/servicios.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </body>
 </html>
